@@ -53,9 +53,9 @@ func main() {
 	case *batch != "":
 		runBatchMode(es, *batch)
 	default:
-		// Default to interactive mode
-		ui := ui.NewInteractiveUI(es)
-		ui.Run()
+		// Default to GUI mode
+		gui := ui.NewGUI(es)
+		gui.Run()
 	}
 }
 
@@ -67,7 +67,7 @@ USAGE:
   mdes [OPTIONS]
 
 OPTIONS:
-  -i          Interactive diagnosis mode (default)
+  -i          Interactive CLI diagnosis mode
   -b SYMPTOMS Batch mode with comma-separated symptoms
   -l          List all available symptoms
   -s          Show knowledge base statistics
@@ -75,7 +75,10 @@ OPTIONS:
   -h          Show this help message
 
 EXAMPLES:
-  # Interactive mode
+  # Launch GUI
+  mdes
+
+  # Interactive CLI mode
   mdes -i
 
   # Batch mode with symptoms

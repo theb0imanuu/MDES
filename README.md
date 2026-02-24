@@ -90,11 +90,11 @@ For global access from any directory:
 
 ## 4. Running the Application
 
-The MDES CLI supports multiple execution modes to accommodate different clinical scenarios.
+The MDES application supports multiple execution modes to accommodate different clinical scenarios, including a fully-featured Graphical User Interface (GUI)!
 
-### 4.1 Interactive Diagnostic Mode (Default)
+### 4.1 Graphical User Interface (GUI) - Recommended
 
-This mode guides healthcare workers through a systematic symptom interview, organized by physiological categories. This is the primary mode for clinical use.
+This mode provides a highly visual, easy-to-use checklist and progress bars for the Expert System diagnoses.
 
 **Command:**
 
@@ -102,7 +102,20 @@ This mode guides healthcare workers through a systematic symptom interview, orga
 ./mdes
 ```
 
-or explicitly:
+_(Or simply double-click the `mdes-gui.exe` executable on Windows!)_
+
+**Operational Flow:**
+
+1. A welcome screen displays system capabilities.
+2. The user selects presented symptoms categorized by type via checkboxes.
+3. The inference engine matches symptoms against the rule base to populate the Results section.
+4. Results display ranked diagnoses with Certainty Factor bars, severity assessments, and clinical recommendations.
+
+### 4.2 Interactive Diagnostic Mode (CLI)
+
+This mode guides healthcare workers through a systematic command-line symptom interview.
+
+**Command:**
 
 ```bash
 ./mdes -i
@@ -149,7 +162,7 @@ Do you have Chills? (Feeling cold with shivering) [y/n/s]: y
    • IV artesunate for severe cases
 ```
 
-### 4.2 Batch Diagnostic Mode
+### 4.3 Batch Diagnostic Mode
 
 For rapid assessment when symptom data is already collected, or for testing specific clinical scenarios.
 
