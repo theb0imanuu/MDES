@@ -38,6 +38,17 @@ Before running the application, ensure you have the following installed:
 
 ## 3. Installation and Setup
 
+### 3.1 Download Pre-compiled Release (Recommended)
+
+You don't need to build the project from source if you just want to run it! You can find pre-compiled binaries for Windows, macOS, and Linux:
+
+1. **GitHub Releases:** Download the latest version (`v2.0.1`) directly from the releases page:
+   [https://github.com/theb0imanuu/MDES/releases/tag/v2.0.1](https://github.com/theb0imanuu/MDES/releases/tag/v2.0.1)
+
+2. **Repository Binaries:** If you cloned the repository, the pre-built executables are already available inside the `bin/` folder of this project.
+
+### 3.2 Build from Source
+
 **Step 1: Clone the Repository**
 
 ```bash
@@ -341,4 +352,3 @@ The implementation choices (Go language, CLI interface) prioritize deployment fe
 - Assignment 1 Problem Statement: Delayed and Inaccurate Diagnosis in Rural Healthcare
 - Assignment 2 Requirements: System Requirements and Knowledge Acquisition
 - Go Programming Language Documentation: https://golang.org/doc/
-
