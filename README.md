@@ -320,7 +320,7 @@ _Expected:_ Pneumonia with high certainty factor
 | Issue                           | Solution                                                                                     |
 | :------------------------------ | :------------------------------------------------------------------------------------------- |
 | `command not found: mdes`       | Ensure the binary is in your PATH or use `./mdes` from the build directory                   |
-| `go: module not found`          | Run `go mod init github.com/yourusername/mdes-cli` then `go mod tidy`                        |
+| `go: module not found`          | Run `go mod init github.com/theb0imanuu/MDES` then `go mod tidy`                             |
 | Permission denied (Linux/macOS) | Run `chmod +x mdes` to make executable                                                       |
 | Batch mode returns no diagnosis | Check symptom spelling against `./mdes -l` output; use comma-separated values without spaces |
 
