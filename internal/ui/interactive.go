@@ -48,6 +48,12 @@ func (ui *InteractiveUI) Run() {
 	}
 
 	ui.performDiagnosis(patientSymptoms)
+	ui.waitForExit()
+}
+
+func (ui *InteractiveUI) waitForExit() {
+	fmt.Println("\nPress Enter to exit...")
+	ui.reader.ReadString('\n')
 }
 
 func (ui *InteractiveUI) askSymptom(sym engine.Symptom) bool {
