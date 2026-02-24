@@ -41,8 +41,8 @@ Before running the application, ensure you have the following installed:
 **Step 1: Clone the Repository**
 
 ```bash
-git clone https://github.com/yourusername/mdes-cli.git
-cd mdes-cli
+git clone https://github.com/theb0imanuu/MDES.git
+cd MDES
 ```
 
 **Step 2: Verify Go Module**
@@ -341,3 +341,4 @@ The implementation choices (Go language, CLI interface) prioritize deployment fe
 - Assignment 1 Problem Statement: Delayed and Inaccurate Diagnosis in Rural Healthcare
 - Assignment 2 Requirements: System Requirements and Knowledge Acquisition
 - Go Programming Language Documentation: https://golang.org/doc/
+
